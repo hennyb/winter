@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.uniko.west.winter</groupId>
+  <artifactId>winter-core</artifactId>
+  <version>0.2.1-SNAPSHOT</version>
+  <name>winter-core</name>
+  <description>Winter implementation based on SPARQL 1.1</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.5.6</version>
+    </dependency>
+      <dependency>
+   	  <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.5.6</version>
+    	<!-- <scope>test</scope> -->
+	</dependency>
+    <!--       --> 
+    <dependency>
+      <groupId>fastutil</groupId>
+      <artifactId>fastutil</artifactId>
+      <version>5.0.7</version>
+    </dependency>
+
+	<dependency>
+  		<groupId>com.hp.hpl.jena</groupId>
+  		<artifactId>arq</artifactId>
+  		<version>2.8.5</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.hp.hpl.jena</groupId>
+  		<artifactId>arq-extra</artifactId>
+  		<version>2.7.0</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.hp.hpl.jena</groupId>
+  		<artifactId>jena</artifactId>
+  		<version>2.6.3</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.0</version>
+      <scope>test</scope>
+    </dependency>
+        <dependency>
+      <groupId>javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.8.0.GA</version>
+    </dependency> 
+    
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20090211</version>
+	</dependency>
+    
+    
+    <dependency>
+    	<groupId>de.uniko.west.winter</groupId>
+    	<artifactId>winter-api</artifactId>
+    	<version>0.2.1-SNAPSHOT</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>de.uniko.west.winter</groupId>
+    	<artifactId>winter-utils</artifactId>
+    	<version>0.2.1-SNAPSHOT</version>
+    	<type>jar</type>
+    	<scope>compile</scope>
+    </dependency>
+  </dependencies>
+  
+  <build>
+  	<plugins>
+    	<plugin>
+    		<groupId>org.apache.maven.plugins</groupId>
+    			<artifactId>maven-compiler-plugin</artifactId>
+    				<configuration>
+    					<source>1.6</source>
+    					<target>1.6</target>
+    				</configuration>
+	</plugin>
+   </plugins>
+  </build>  
+  
+</project>

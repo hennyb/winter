@@ -1,0 +1,23 @@
+Basis Funktionalitäten:
+	*Winter:
+		-addObject()
+		-addField()
+		-replaceField()
+		-deleteField()
+
+	*Validierung:
+		-refs ausgehen -->
+			ref immer object.
+
+	*place type information of ASTRDFLiteral in Qname child not as addition to Value label....
+	
+
+o Winter aufteilen
+	-api
+	-utils
+	-core
+	-preprocess
+	(-backend)
+	
+o 
+
